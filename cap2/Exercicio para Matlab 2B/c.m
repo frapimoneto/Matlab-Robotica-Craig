@@ -17,7 +17,8 @@ function E = homogeneousTransformationMatrix(alpha, beta, gamma, a, b, c)
      
     %calculando a matriz inversa
     fprintf('\n--------------------Sem inv---------------------------\n');
-     det(E)
+     A = inv(E);
+     disp(A);
      
      %calculando a matriz inversa com inv
      fprintf('\n--------------------Com inv---------------------------\n');
